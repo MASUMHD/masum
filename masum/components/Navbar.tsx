@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="max-w-300 mx-auto px-4 py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="flex items-center gap-2 font-semibold text-lg">
+        <div className="flex items-center gap-2 font-semibold text-lg cursor-pointer">
           <div className="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white">
             M
           </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Theme Toggle */}
           <button
             onClick={() => setDark(!dark)}
-            className="w-9 h-9 flex items-center justify-center rounded-full border cursor-pointer"
+            className="w-9 h-9 flex items-center justify-center rounded-full border cursor-pointer text-gray-600 hover:bg-black/80 hover:text-white transition "
           >
             {dark ? <FiSun size={18} /> : <FiMoon size={18} />}
           </button>
