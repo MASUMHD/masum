@@ -4,6 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 // import image from "@/public/Masum.png";
 import image from "@/public/profile.jpg";
 import Year from "@/components/Year";
+import { FiMapPin } from "react-icons/fi";
 
 export default function Hero() {
   return (
@@ -16,15 +17,15 @@ export default function Hero() {
             AVAILABLE FOR SELECT WORK • <Year />
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Hi, I'm <span className="text-yellow-600">Rifath</span>
             <br />
-            <span className="text-gray-500">Full Stack</span>
+            <span className="text-[#6b625c] tracking-[10px]">Front-End</span>
             <br />
-            <span className="text-gray-500">Developer</span>
+            <span className="text-[#6b625c] tracking-wide">Developer</span>
           </h1>
 
-          <p className="text-gray-600 mt-6 max-w-lg">
+          <p className="text-gray-500 text-lg mt-6 max-w-xl">
             I design and build premium digital experiences — from marketing
             sites and SaaS products to Shopify and Webflow storefronts. Focused
             on craft, performance and quiet luxury.
@@ -40,10 +41,10 @@ export default function Hero() {
             </button>
           </div>
 
-          <div className="flex items-center justify-center md:justify-start gap-6 mt-8 text-sm text-gray-500 flex-wrap">
-            <span>📍 Remote • Worldwide</span>
+          <div className="flex items-center justify-center md:justify-start gap-3 mt-8 text-sm text-gray-500 flex-wrap">
+            <span className="flex items-center gap-3"><FiMapPin /> Remote <span>•</span> Worldwide</span>
             <span>•</span>
-            <span>5+ years crafting for the web</span>
+            <span>3+ years crafting for the web</span>
           </div>
         </div>
 

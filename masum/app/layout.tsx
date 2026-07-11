@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,16 +28,23 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrains.variable} h-full antialiased`}
+      suppressHydrationWarning
+      className={`${inter.variable} ${jetbrains.variable}`}
     >
-      <body className="min-h-full flex flex-col font-body">
+      <body className="min-h-screen flex flex-col font-body">
 
-        <Navbar />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
 
-        {children}
+          <Navbar />
 
-        <Footer />
-        
+          <main className="flex-1">
+            {children}
+          </main>
+
+          <Footer />
+
+        </ThemeProvider>
+
       </body>
     </html>
   );

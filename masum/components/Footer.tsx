@@ -6,7 +6,7 @@ import Year from "@/components/Year";
 export default function Footer() {
 
   return (
-    <footer className="w-full border-t bg-[#f7f5f2]">
+    <footer className="w-full border-t">
       <div className="max-w-300 mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Text */}
         <h6 className="text-sm text-gray-600 text-center md:text-left">

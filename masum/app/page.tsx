@@ -8,7 +8,7 @@ import Skills from "@/app/(homeSections)/Skills";
 
 export default function Home() {
   return (
-    <main className="bg-linear-to-b from-[#f5f2ec] via-[#f7f5f2] to-[#f1ede7]">
+    <main className="">
      
         <div className="mb-40">
           
