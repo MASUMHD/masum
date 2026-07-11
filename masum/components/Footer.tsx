@@ -1,17 +1,16 @@
-"use client";
 
 import { FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
+import Year from "@/components/Year";
 
 export default function Footer() {
-  const year = new Date().getFullYear();
 
   return (
     <footer className="w-full border-t bg-[#f7f5f2]">
       <div className="max-w-300 mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Text */}
         <h6 className="text-sm text-gray-600 text-center md:text-left">
-          © {year} Masum. Crafted with care.
+          © <Year /> Masum. Crafted with care.
         </h6>
 
         {/* Icons */}

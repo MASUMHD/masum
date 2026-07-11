@@ -1,19 +1,19 @@
-"use client";
 
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 // import image from "@/public/Masum.png";
 import image from "@/public/profile.jpg";
+import Year from "@/components/Year";
 
 export default function Hero() {
   return (
-    <section className="w-full py-16 md:24 lg:py-36 bg-linear-to-b from-[#f5f2ec] via-[#f7f5f2] to-[#f1ede7]">
+    <section className="w-full py-16 md:24 lg:py-36 ">
       <div className="max-w-300 mx-auto px-4 grid md:grid-cols-2 gap-20 md:gap-10 items-center ">
         {/* LEFT */}
         <div className="order-2 md:order-1 text-center md:text-start">
           <div className="inline-flex items-center gap-2 border px-4 py-1 rounded-full text-xs text-gray-500 mb-6">
             <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-            AVAILABLE FOR SELECT WORK • {new Date().getFullYear()}
+            AVAILABLE FOR SELECT WORK • <Year />
           </div>
 
           <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
@@ -62,7 +62,7 @@ export default function Hero() {
 
             <div className="flex justify-between text-xs text-gray-500 mt-2 px-4 py-1">
               <span>© masum.dev</span>
-              <span>v.{new Date().getFullYear()}</span>
+              <span>v.<Year /></span>
             </div>
           </div>
         </div>
