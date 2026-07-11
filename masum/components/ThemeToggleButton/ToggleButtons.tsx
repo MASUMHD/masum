@@ -7,22 +7,43 @@ import { useEffect, useState } from "react";
 export default function ToggleButtons() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [rotate, setRotate] = useState(false);
 
-  // Fix hydration issue
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) return null;
 
+  const handleToggle = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+    setRotate(!rotate);
+  };
+
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={handleToggle}
       className="p-2 rounded-full border border-gray-300 dark:border-gray-600
-                 text-gray-700 dark:text-gray-200
-                 hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+           text-black dark:text-white
+           
+           hover:bg-black hover:text-white
+           dark:hover:bg-white/20
+           
+           hover:shadow-md hover:scale-105
+           
+           transition-all duration-300
+           flex items-center justify-center cursor-pointer"
     >
-      {theme === "dark" ? <FiSun size={18} /> : <FiMoon size={18} />}
+      <span
+        className={`inline-block transform transition-all duration-700 ease-in-out will-change-transform
+        ${rotate ? "rotate-360 scale-110" : "rotate-0 scale-100"}`}
+      >
+        {theme === "dark" ? (
+          <FiSun size={18} className="text-white" />
+        ) : (
+          <FiMoon size={18} className="text-black" />
+        )}
+      </span>
     </button>
   );
 }
