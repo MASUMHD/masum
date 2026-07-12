@@ -9,7 +9,7 @@ import { FiMapPin } from "react-icons/fi";
 export default function Hero() {
   return (
     <section className="w-full py-16 md:24 lg:py-36 ">
-      <div className="max-w-300 mx-auto px-4 grid md:grid-cols-2 gap-20 md:gap-10 items-center ">
+      <div className="grid md:grid-cols-2 gap-20 md:gap-10 items-center ">
         {/* LEFT */}
         <div className="order-2 md:order-1 text-center md:text-start">
           <div className="inline-flex items-center gap-2 border px-4 py-1 rounded-full text-xs text-gray-500 mb-6">

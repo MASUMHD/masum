@@ -1,7 +1,83 @@
-import React from 'react'
+"use client";
+
+import { FaProjectDiagram, FaUsers, FaCoffee } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
+import { BsStars } from "react-icons/bs";
 
 export default function About() {
   return (
-    <div>About</div>
-  )
+    <section className="w-full py-16 md:py-24">
+      {/* LEFT CONTENT */}
+      <div>
+        <span className="text-xs tracking-widest uppercase text-gray-500 border border-gray-300 px-3 py-1 rounded-full mb-6 flex items-center justify-center gap-2 w-28 bg-white">
+          <span className="text-[#e3a73b]">
+            <BsStars size={14} />
+          </span>
+          <span>About</span>
+        </span>
+
+        <h1 className="text-3xl md:text-5xl font-semibold leading-tight mb-6">
+          Building considered <br />
+          products with quiet <br />
+          craft.
+        </h1>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* RIGHT CONTENT */}
+        <div className="">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+            I'm a full stack developer with a deep interest in interface design,
+            motion and the moments that make a product feel considered. I work
+            with founders and teams to ship refined web experiences end-to-end.
+          </p>
+
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed max-w-xl">
+            My work spans SaaS interfaces, marketing sites, e-commerce, and
+            custom CMS builds. I care about typography, restraint and the tiny
+            details that add up to feel premium.
+          </p>
+        </div>
+
+        {/* RIGHT STATS */}
+        <div className="grid sm:grid-cols-2 gap-6">
+          {/* CARD 1 */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
+            <FaProjectDiagram className="text-xl text-orange-500" />
+            <div>
+              <h2 className="text-xl font-semibold text-black">50+</h2>
+              <p className="text-sm text-gray-500">Projects shipped</p>
+            </div>
+          </div>
+
+          {/* CARD 2 */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
+            <MdWork className="text-xl text-orange-500" />
+            <div>
+              <h2 className="text-xl font-semibold text-black">5+</h2>
+              <p className="text-sm text-gray-500">Years experience</p>
+            </div>
+          </div>
+
+          {/* CARD 3 */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
+            <FaUsers className="text-xl text-orange-500" />
+            <div>
+              <h2 className="text-xl font-semibold text-black">20+</h2>
+              <p className="text-sm text-gray-500">Happy clients</p>
+            </div>
+          </div>
+
+          {/* CARD 4 */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
+            <FaCoffee className="text-xl text-orange-500" />
+            <div>
+              <h2 className="text-xl font-semibold text-black">∞</h2>
+              <p className="text-sm text-gray-500">Cups of coffee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

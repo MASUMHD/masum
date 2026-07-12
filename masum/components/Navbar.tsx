@@ -5,6 +5,8 @@ import Link from "next/link";
 import { HiOutlineX } from "react-icons/hi";
 import ToggleButtons from "./ThemeToggleButton/ToggleButtons";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import Image from "next/image";
+import logo from "@/public/loga-img-too.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +16,14 @@ export default function Navbar() {
       <div className="max-w-300 mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 font-semibold text-lg cursor-pointer">
-          <div className="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white">
-            M
+          <div className="h-10 w-10 flex items-center justify-center object-cover rounded-full bg-black text-white">
+            <Image
+              src={logo}
+              alt="Logo"
+              width={40}
+              height={40}
+              className="rounded-full object-cover"
+            />
           </div>
           <span>
             <h2>
