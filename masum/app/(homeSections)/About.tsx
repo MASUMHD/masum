@@ -9,7 +9,7 @@ export default function About() {
     <section className="w-full py-16 md:py-24">
       {/* LEFT CONTENT */}
       <div>
-        <span className="text-xs tracking-widest uppercase text-gray-500 border border-gray-300 px-3 py-1 rounded-full mb-6 flex items-center justify-center gap-2 w-28 bg-white">
+        <span className="text-xs tracking-widest uppercase text-gray-500 border border-gray-300 px-3 py-1 rounded-lg justify-cente mb-6 flex items-center justify-center gap-2 w-28 bg-white">
           <span className="text-[#e3a73b]">
             <BsStars size={14} />
           </span>
@@ -42,8 +42,8 @@ export default function About() {
         {/* RIGHT STATS */}
         <div className="grid sm:grid-cols-2 gap-6">
           {/* CARD 1 */}
-          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
-            <FaProjectDiagram className="text-xl text-orange-500" />
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+            <FaProjectDiagram size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">50+</h2>
               <p className="text-sm text-gray-500">Projects shipped</p>
@@ -51,8 +51,8 @@ export default function About() {
           </div>
 
           {/* CARD 2 */}
-          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
-            <MdWork className="text-xl text-orange-500" />
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+            <MdWork size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">5+</h2>
               <p className="text-sm text-gray-500">Years experience</p>
@@ -60,8 +60,8 @@ export default function About() {
           </div>
 
           {/* CARD 3 */}
-          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
-            <FaUsers className="text-xl text-orange-500" />
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+            <FaUsers size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">20+</h2>
               <p className="text-sm text-gray-500">Happy clients</p>
@@ -69,8 +69,8 @@ export default function About() {
           </div>
 
           {/* CARD 4 */}
-          <div className="bg-white rounded-2xl p-6 shadow-sm border flex items-center gap-4">
-            <FaCoffee className="text-xl text-orange-500" />
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+            <FaCoffee size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">∞</h2>
               <p className="text-sm text-gray-500">Cups of coffee</p>
