@@ -1,5 +1,3 @@
-"use client";
-
 import { FaProjectDiagram, FaUsers, FaCoffee } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { BsStars } from "react-icons/bs";
@@ -54,7 +52,7 @@ export default function About() {
           <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
             <MdWork size={24} className="text-xl text-orange-500" />
             <div>
-              <h2 className="text-xl font-semibold text-black">5+</h2>
+              <h2 className="text-xl font-semibold text-black">3+</h2>
               <p className="text-sm text-gray-500">Years experience</p>
             </div>
           </div>
@@ -63,7 +61,7 @@ export default function About() {
           <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
             <FaUsers size={24} className="text-xl text-orange-500" />
             <div>
-              <h2 className="text-xl font-semibold text-black">20+</h2>
+              <h2 className="text-xl font-semibold text-black">10+</h2>
               <p className="text-sm text-gray-500">Happy clients</p>
             </div>
           </div>

@@ -12,7 +12,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b">
+    <nav className="w-full border-b border-[#e6dccb] dark:border-white/10 fixed top-0 left-0 z-50 ">
       <div className="max-w-300 mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 font-semibold text-lg cursor-pointer">
