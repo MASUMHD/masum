@@ -5,7 +5,7 @@ import SectionName from "@/components/sectionName/SectionName";
 
 export default function About() {
   return (
-    <section className="w-full py-16 md:py-24 z-10 relative">
+    <section id="about" className="w-full py-16 md:py-24 z-10 relative">
       {/* LEFT CONTENT */}
       <div>
 

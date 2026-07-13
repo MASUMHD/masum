@@ -24,11 +24,11 @@ export default function Education() {
   ];
 
   return (
-    <section className="w-full py-16 ">
+    <section id="education" className="w-full py-16 ">
       <div className="">
         {/* Header */}
         <div className="mb-10">
-          <SectionName width={36} name="QUALIFICATIONS" />
+          <SectionName width={40} name="QUALIFICATIONS" />
 
           <h2 className="text-3xl md:text-5xl font-semibold leading-tight">
             Education & training.
