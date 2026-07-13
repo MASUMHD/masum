@@ -1,18 +1,15 @@
 import { FaProjectDiagram, FaUsers, FaCoffee } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { BsStars } from "react-icons/bs";
+import SectionName from "@/components/sectionName/SectionName";
 
 export default function About() {
   return (
-    <section className="w-full py-16 md:py-24">
+    <section className="w-full py-16 md:py-24 z-10 relative">
       {/* LEFT CONTENT */}
       <div>
-        <span className="text-xs tracking-widest uppercase text-gray-500 border border-gray-300 px-3 py-1 rounded-lg justify-cente mb-6 flex items-center justify-center gap-2 w-28 bg-white">
-          <span className="text-[#e3a73b]">
-            <BsStars size={14} />
-          </span>
-          <span>About</span>
-        </span>
+
+        <SectionName name="About" />
 
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight mb-6">
           Building considered <br />
