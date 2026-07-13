@@ -18,6 +18,9 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Masum Portfolio",
   description: "My personal portfolio website",
+  icons: {
+    icon: "/headar-logo-too.jpg",
+  },
 };
 
 export default function RootLayout({

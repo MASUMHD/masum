@@ -11,6 +11,16 @@ import logo from "@/public/loga-img-too.png";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const navLinks = [
+    { name: "Home", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Education", href: "#education" },
+    { name: "Skills", href: "#" },
+    { name: "Experience", href: "#" },
+    { name: "Projects", href: "#" },
+    { name: "Contact", href: "#" },
+  ];
+
   return (
     <nav className="w-full border-b border-[#e6dccb] dark:border-white/10 fixed top-0 left-0 z-50 ">
       <div className="max-w-300 mx-auto px-4 py-4 flex items-center justify-between">
@@ -27,7 +37,6 @@ export default function Navbar() {
           </div>
           <span>
             <h2>
-              {" "}
               Masum<span className="text-yellow-500">.</span>
             </h2>
           </span>
@@ -35,36 +44,13 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <li>
-            <Link href="#">
-              <h6>Home</h6>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <h6>About</h6>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <h6>Skills</h6>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <h6>Experience</h6>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <h6>Projects</h6>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <h6>Contact</h6>
-            </Link>
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link href={link.href}>
+                <h6>{link.name}</h6>
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Right Icons */}
@@ -87,44 +73,21 @@ export default function Navbar() {
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="p-5 flex justify-between items-center border-b">
+        <div className="p-5 flex justify-between items-center border-b text-black">
           <span className="font-semibold">Menu</span>
           <button onClick={() => setMenuOpen(false)}>
             <HiOutlineX size={24} />
           </button>
         </div>
 
-        <ul className="flex flex-col gap-6 p-5 text-sm font-medium">
-          <li>
-            <Link href="#" onClick={() => setMenuOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="#" onClick={() => setMenuOpen(false)}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="#" onClick={() => setMenuOpen(false)}>
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link href="#" onClick={() => setMenuOpen(false)}>
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link href="#" onClick={() => setMenuOpen(false)}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link href="#" onClick={() => setMenuOpen(false)}>
-              Contact
-            </Link>
-          </li>
+        <ul className="flex flex-col gap-6 p-5 text-sm font-medium text-black">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link href={link.href} onClick={() => setMenuOpen(false)}>
+                {link.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
 
