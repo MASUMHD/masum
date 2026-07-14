@@ -19,6 +19,8 @@ import {
   SiFirebase,
   SiWebflow,
   SiShopify,
+  SiNetlify,
+  SiVercel, 
 } from "react-icons/si";
 
 const skillsData = [
@@ -33,7 +35,7 @@ const skillsData = [
   {
     title: "Frontend",
     items: [
-      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "React.js", icon: FaReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8" },
     ],
@@ -57,6 +59,8 @@ const skillsData = [
     items: [
       { name: "Git", icon: FaGitAlt, color: "#F05032" },
       { name: "GitHub", icon: FaGithub, color: "#181717" },
+      { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+      { name: "Vercel", icon: SiVercel, color: "#000000" }
     ],
   },
   {
