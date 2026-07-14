@@ -24,7 +24,7 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="w-full py-16 ">
+    <section id="education" className="w-full py-16">
       <div className="">
         {/* Header */}
         <div className="mb-10">
