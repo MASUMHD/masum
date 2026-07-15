@@ -37,7 +37,7 @@ export default function About() {
         {/* RIGHT STATS */}
         <div className="grid sm:grid-cols-2 gap-6">
           {/* CARD 1 */}
-          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out hover:-translate-y-1 flex items-center gap-4">
             <FaProjectDiagram size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">50+</h2>
@@ -46,7 +46,7 @@ export default function About() {
           </div>
 
           {/* CARD 2 */}
-          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out hover:-translate-y-1 flex items-center gap-4">
             <MdWork size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">3+</h2>
@@ -55,7 +55,7 @@ export default function About() {
           </div>
 
           {/* CARD 3 */}
-          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out hover:-translate-y-1 flex items-center gap-4">
             <FaUsers size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">10+</h2>
@@ -64,7 +64,7 @@ export default function About() {
           </div>
 
           {/* CARD 4 */}
-          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out flex items-center gap-4">
+          <div className="bg-white rounded-lg justify-center p-6 hover:shadow-lg border border-gray-300 hover:border-orange-400 transition duration-300 ease-in-out hover:-translate-y-1 flex items-center gap-4">
             <FaCoffee size={24} className="text-xl text-orange-500" />
             <div>
               <h2 className="text-xl font-semibold text-black">∞</h2>

@@ -94,7 +94,7 @@ export default function Skills() {
           {skillsData.map((category, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow hover: hover:-translate-y-1 transition duration-300"
+              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow hover:border-orange-400 ease-in-out hover:-translate-y-1 transition duration-300"
             >
               {/* Title */}
               <h3 className="text-sm tracking-[0.2em] text-gray-500 dark:text-gray-400 mb-4 uppercase">

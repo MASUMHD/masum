@@ -38,14 +38,14 @@ export default function Education() {
         {/* Timeline */}
         <div className="relative border-l border-gray-300 dark:border-gray-300 space-y-10">
           {data.map((item, index) => (
-            <div key={index} className="relative pl-10">
+            <div key={index} className="relative pl-10 ">
               {/* Icon */}
               <div className="absolute -left-3.5 -top-1 w-7 h-7 rounded-full  flex items-center justify-center border bg-amber-50  border-gray-300 dark:border-gray-300">
                 <FaGraduationCap size={18} className="text-[#e3a73b]" />
               </div>
 
               {/* Card */}
-              <div className="bg-white border border-gray-200 rounded-lg p-5 md:p-6">
+              <div className="bg-white border border-gray-200 hover:shadow-lg hover:border-orange-400 hover:-translate-y-1 transition duration-300 ease-in-out rounded-lg p-5 md:p-6">
                 <p className="text-sm text-gray-500 mb-1">{item.year}</p>
 
                 <h3 className="text-lg md:text-xl lg:text-2xl text-black font-semibold mb-2">
