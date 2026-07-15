@@ -21,6 +21,8 @@ import {
   SiShopify,
   SiNetlify,
   SiVercel, 
+  // SiThunderstore,
+  // SiFigma,
 } from "react-icons/si";
 
 const skillsData = [
@@ -60,7 +62,9 @@ const skillsData = [
       { name: "Git", icon: FaGitAlt, color: "#F05032" },
       { name: "GitHub", icon: FaGithub, color: "#181717" },
       { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
-      { name: "Vercel", icon: SiVercel, color: "#000000" }
+      { name: "Vercel", icon: SiVercel, color: "#000000" },
+      // { name: "Thunder Client", icon:  SiThunderstore, color: "#FF6C37" },
+      // { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     ],
   },
   {
