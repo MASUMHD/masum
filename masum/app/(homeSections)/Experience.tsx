@@ -149,7 +149,7 @@ export default function Experience() {
               >
                 <div className="mb-4 border-b border-orange-300 border-dashed">
                   <div className="flex justify-between mb-2">
-                    <h3 className="font-bold text-black text-lg md:text-xl lg:text-2xl text-center items-center">
+                    <h3 className="font-bold text-black text-lg md:text-xl lg:text-2xl ">
                       {exp.role}
                     </h3>
                     <span

@@ -97,7 +97,7 @@ export default function Skills() {
               className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow hover:border-orange-400 ease-in-out hover:-translate-y-1 transition duration-300"
             >
               {/* Title */}
-              <h3 className="text-sm tracking-[0.2em] text-gray-500 dark:text-gray-400 mb-4 uppercase">
+              <h3 className="text-sm tracking-[0.2em] text-gray-500 mb-4 uppercase border-b border-orange-300 border-dashed pb-2">
                 {category.title}
               </h3>
 
@@ -110,7 +110,7 @@ export default function Skills() {
                       key={i}
                       className="flex items-center gap-2 text-sm px-3 py-1 rounded-md border border-gray-300 bg-[#f3eee8]"
                     >
-                      <Icon size={32} style={{ color: item.color }} className="text-base" />
+                      <Icon size={24} style={{ color: item.color }} className="text-base" />
                       <span className="text-black">{item.name}</span>
                     </div>
                   );
