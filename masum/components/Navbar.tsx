@@ -12,11 +12,11 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#about" },
     { name: "Education", href: "#education" },
-    { name: "Skills", href: "#" },
-    { name: "Experience", href: "#" },
+    { name: "Skills", href: "#skills" },
+    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#" },
     { name: "Contact", href: "#" },
   ];

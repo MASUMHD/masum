@@ -79,7 +79,7 @@ const skillsData = [
 
 export default function Skills() {
   return (
-    <section className="w-full py-24">
+    <section id="skills" className="w-full py-24">
       <div className="">
         {/* Top Title */}
         <SectionName width={40} name="SKILLS" />
@@ -97,7 +97,7 @@ export default function Skills() {
               className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow hover:border-orange-400 ease-in-out hover:-translate-y-1 transition duration-300"
             >
               {/* Title */}
-              <h3 className="text-sm tracking-[0.2em] text-gray-500 mb-4 uppercase border-b border-orange-300 border-dashed pb-2">
+              <h3 className="text-base tracking-[0.2em] text-gray-800 font-semibold  mb-4 uppercase border-b border-orange-300 border-dashed pb-2">
                 {category.title}
               </h3>
 

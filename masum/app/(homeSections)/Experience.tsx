@@ -90,7 +90,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-10 md:py-20">
+    <section id="experience" className="py-10 md:py-20">
       <div className="">
         {/* Badge */}
         <SectionName width={40} name="EXPERIENCE" />
