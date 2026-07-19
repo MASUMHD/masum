@@ -1,5 +1,3 @@
-"use client";
-
 import SectionName from "@/components/sectionName/SectionName";
 import { FiMail, FiGithub, FiLinkedin, FiSend } from "react-icons/fi";
 
@@ -17,13 +15,14 @@ export default function Contact() {
       <div className="w-full grid lg:grid-cols-2 gap-12 items-start">
         {/* LEFT CONTENT */}
         <div>
-          <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed max-w-xl mb-8">
+          <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed max-w-base mb-8">
             Have a project in mind or just want to say hi? Send a note — I
             typically reply within a day.
           </p>
 
           {/* ICON LIST */}
           <div className="space-y-4">
+
             {/* Email */}
             <div className="flex items-center gap-4 group">
               <div className="p-2 rounded-lg bg-black/5 text-black group-hover:bg-black group-hover:text-white transition">
@@ -53,6 +52,7 @@ export default function Contact() {
                 linkedin.com/in/masum
               </span>
             </div>
+
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your name"
-                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 placeholder:text-base focus:outline-none focus:ring-1 focus:ring-black"
+                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 placeholder:text-base text-gray-900 focus:outline-none focus:ring-1 focus:ring-black"
               />
             </div>
 
@@ -78,8 +78,8 @@ export default function Contact() {
               </label>
               <input
                 type="email"
-                placeholder="you@studio.com"
-                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 placeholder:text-base focus:outline-none focus:ring-1 focus:ring-black"
+                placeholder="you@email.com"
+                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 placeholder:text-base text-gray-900 focus:outline-none focus:ring-1 focus:ring-black"
               />
             </div>
 
@@ -91,7 +91,7 @@ export default function Contact() {
               <textarea
                 rows={4}
                 placeholder="Tell me about the project..."
-                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 placeholder:text-base focus:outline-none focus:ring-1 focus:ring-black resize-none"
+                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 text-gray-900 placeholder:text-base focus:outline-none focus:ring-1 focus:ring-black resize-none"
               />
             </div>
 
