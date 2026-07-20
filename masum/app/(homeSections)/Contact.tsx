@@ -5,25 +5,24 @@ import { FiMail, FiGithub, FiLinkedin, FiSend } from "react-icons/fi";
 export default function Contact() {
   return (
     <section className="py-16 ">
-      <div className="py-10">
+      <div className="">
         <SectionName width={40} name="CONTACT" />
 
-        <h2 className="text-3xl md:text-5xl font-semibold leading-tight  max-w-2xl">
+        <h2 className="text-3xl md:text-5xl font-semibold leading-tight max-w-2xl">
           Let’s build something worth remembering.
         </h2>
       </div>
 
       <div className="w-full grid lg:grid-cols-2 gap-12 items-start">
         {/* LEFT CONTENT */}
-        <div>
+        <div className="mt-10">
           <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed max-w-base mb-8">
             Have a project in mind or just want to say hi? Send a note — I
             typically reply within a day.
           </p>
 
           {/* ICON LIST */}
-          <div className="grid grid-cols-2 gap-4">
-
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Email */}
             <div className="flex flex-col items-start  gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
               <div className="p-2 rounded-lg bg-black/5 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition">
@@ -75,7 +74,6 @@ export default function Contact() {
                 linkedin.com/in/masum
               </span>
             </div>
-
           </div>
         </div>
 
