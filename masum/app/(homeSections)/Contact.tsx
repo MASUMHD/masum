@@ -1,4 +1,5 @@
 import SectionName from "@/components/sectionName/SectionName";
+import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMail, FiGithub, FiLinkedin, FiSend } from "react-icons/fi";
 
@@ -33,9 +34,14 @@ export default function Contact() {
                 <h4>Email :</h4>
               </div>
 
-              <span className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer">
+              <Link
+                href="mailto:mrmasum2k4@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer"
+              >
                 mrmasum2k4@gmail.com
-              </span>
+              </Link>
             </div>
 
             {/* WhatsApp */}
@@ -43,12 +49,19 @@ export default function Contact() {
               <div className="p-2 rounded-lg bg-black/5 text-green-500 group-hover:bg-green-500 group-hover:text-white transition">
                 <FaWhatsapp className="text-lg" />
               </div>
+
               <div className="border-b border-orange-500 border-dashed w-full pb-2 mb-1 text-gray-900 font-semibold">
-                <h4>What's App :</h4>
+                <h4>WhatsApp :</h4>
               </div>
-              <span className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer">
+
+              <Link
+                href="https://wa.me/8801865455901"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer"
+              >
                 +880 18654-55901
-              </span>
+              </Link>
             </div>
 
             {/* GitHub */}
@@ -56,12 +69,19 @@ export default function Contact() {
               <div className="p-2 rounded-lg bg-black/5 text-gray-800 group-hover:bg-gray-800 group-hover:text-white transition">
                 <FiGithub className="text-lg" />
               </div>
+
               <div className="border-b border-orange-500 border-dashed w-full pb-2 mb-1 text-gray-900 font-semibold">
                 <h4>GitHub :</h4>
               </div>
-              <span className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer">
+
+              <Link
+                href="https://github.com/MASUMHD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer"
+              >
                 github.com/MASUMHD
-              </span>
+              </Link>
             </div>
 
             {/* LinkedIn */}
@@ -69,12 +89,19 @@ export default function Contact() {
               <div className="p-2 rounded-lg bg-black/5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
                 <FiLinkedin className="text-lg" />
               </div>
+
               <div className="border-b border-orange-500 border-dashed w-full pb-2 mb-1 text-gray-900 font-semibold">
-                <h4>Linkdin :</h4>
+                <h4>LinkedIn :</h4>
               </div>
-              <span className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer">
+
+              <Link
+                href="https://linkedin.com/in/masum"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer"
+              >
                 linkedin.com/in/masum
-              </span>
+              </Link>
             </div>
           </div>
         </div>
