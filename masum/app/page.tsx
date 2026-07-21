@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="">
      
-        <div className="mb-40">
+        <div className="mb-20">
           
           <Hero />
           <About />

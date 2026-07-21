@@ -1,3 +1,4 @@
+import Form from "@/components/contactForm/Form";
 import SectionName from "@/components/sectionName/SectionName";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
@@ -108,51 +109,7 @@ export default function Contact() {
 
         {/* RIGHT FORM */}
         <div className="bg-white rounded-lg border border-gray-300 hover:border-orange-500 p-6 md:p-8">
-          <form className="space-y-5">
-            {/* Name */}
-            <div>
-              <label className="block text-base text-gray-900 font-semibold mb-2 tracking-[4px]">
-                NAME
-              </label>
-              <input
-                type="text"
-                placeholder="Your name"
-                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 placeholder:text-base text-gray-900 focus:outline-none focus:ring-1 focus:ring-black"
-              />
-            </div>
-
-            {/* Email */}
-            <div>
-              <label className="block text-base text-gray-900 font-semibold mb-2 tracking-[4px]">
-                EMAIL
-              </label>
-              <input
-                type="email"
-                placeholder="you@email.com"
-                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 placeholder:text-base text-gray-900 focus:outline-none focus:ring-1 focus:ring-black"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block text-base text-gray-900 font-semibold mb-2 tracking-[4px]">
-                MESSAGE
-              </label>
-              <textarea
-                rows={4}
-                placeholder="Tell me about the project..."
-                className="w-full border rounded-lg px-4 py-3 placeholder:text-gray-400 text-gray-900 placeholder:text-base focus:outline-none focus:ring-1 focus:ring-black resize-none"
-              />
-            </div>
-
-            {/* Button */}
-            <button
-              // type=""
-              className="w-full bg-black text-white py-3 rounded-full hover:opacity-90 transition flex items-center justify-center gap-2 cursor-pointer hover:border border-orange-500"
-            >
-              Send message <FiSend />
-            </button>
-          </form>
+          <Form/>
         </div>
       </div>
     </section>
