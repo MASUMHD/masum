@@ -24,21 +24,23 @@ export default function Contact() {
           {/* ICON LIST */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Email */}
-            <div className="flex flex-col items-start  gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
+            <div className="flex flex-col items-start gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
               <div className="p-2 rounded-lg bg-black/5 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition">
                 <FiMail className="text-lg" />
               </div>
+
               <div className="border-b border-orange-500 border-dashed w-full pb-2 mb-1 text-gray-900 font-semibold">
                 <h4>Email :</h4>
               </div>
+
               <span className="text-gray-700 text-sm md:text-base group-hover:text-black transition cursor-pointer">
                 mrmasum2k4@gmail.com
               </span>
             </div>
 
-            {/* FaWhatsapp */}
-            <div className="flex flex-col items-start  gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
-              <div className="p-2 rounded-lg bg-black/5 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition">
+            {/* WhatsApp */}
+            <div className="flex flex-col items-start gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
+              <div className="p-2 rounded-lg bg-black/5 text-green-500 group-hover:bg-green-500 group-hover:text-white transition">
                 <FaWhatsapp className="text-lg" />
               </div>
               <div className="border-b border-orange-500 border-dashed w-full pb-2 mb-1 text-gray-900 font-semibold">
@@ -50,8 +52,8 @@ export default function Contact() {
             </div>
 
             {/* GitHub */}
-            <div className="flex flex-col items-start  gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
-              <div className="p-2 rounded-lg bg-black/5 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition">
+            <div className="flex flex-col items-start gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
+              <div className="p-2 rounded-lg bg-black/5 text-gray-800 group-hover:bg-gray-800 group-hover:text-white transition">
                 <FiGithub className="text-lg" />
               </div>
               <div className="border-b border-orange-500 border-dashed w-full pb-2 mb-1 text-gray-900 font-semibold">
@@ -63,8 +65,8 @@ export default function Contact() {
             </div>
 
             {/* LinkedIn */}
-            <div className="flex flex-col items-start  gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
-              <div className="p-2 rounded-lg bg-black/5 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition">
+            <div className="flex flex-col items-start gap-2 group border border-gray-200 hover:border-orange-500 p-4 rounded-lg py-6 bg-white">
+              <div className="p-2 rounded-lg bg-black/5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
                 <FiLinkedin className="text-lg" />
               </div>
               <div className="border-b border-orange-500 border-dashed w-full pb-2 mb-1 text-gray-900 font-semibold">
