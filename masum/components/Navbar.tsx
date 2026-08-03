@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="max-w-300 mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <div className="flex items-center gap-2 font-semibold text-lg cursor-pointer">
+          <div className="flex items-center gap-2 font-semibold text-lg cursor-pointer hover:scale-105 transition duration-300 md:border border-orange-400 rounded-full p-1 bg-amber-50">
             <div className="h-10 w-10 flex items-center justify-center object-cover rounded-full bg-black text-white">
               <Image
                 src={logo}
@@ -37,7 +37,7 @@ export default function Navbar() {
               />
             </div>
             <span>
-              <h2>
+              <h2 className='text-gray-900'>
                 Masum<span className="text-yellow-500">.</span>
               </h2>
             </span>
@@ -45,11 +45,11 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
+        <ul className="hidden md:flex items-center gap-8 text-sm font-medium hover:scale-105 transition duration-800 border border-orange-400 rounded-full px-6 py-4 bg-amber-50">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href={link.href}>
-                <h6>{link.name}</h6>
+              <Link href={link.href} className="hover:font-semibold transition duration-200">
+                <h6 className="text-gray-900 hover:text-orange-400 ">{link.name}</h6>
               </Link>
             </li>
           ))}
@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(true)}
-            className="md:hidden cursor-pointer"
+            className="md:hidden cursor-pointer "
           >
             <HiOutlineMenuAlt3 size={24} />
           </button>
