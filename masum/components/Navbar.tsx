@@ -25,22 +25,24 @@ export default function Navbar() {
     <nav className="w-full border-b border-[#e6dccb] dark:border-white/10 fixed top-0 left-0 z-50 ">
       <div className="max-w-300 mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2 font-semibold text-lg cursor-pointer">
-          <div className="h-10 w-10 flex items-center justify-center object-cover rounded-full bg-black text-white">
-            <Image
-              src={logo}
-              alt="Logo"
-              width={40}
-              height={40}
-              className="rounded-full object-cover"
-            />
+        <Link href="/">
+          <div className="flex items-center gap-2 font-semibold text-lg cursor-pointer">
+            <div className="h-10 w-10 flex items-center justify-center object-cover rounded-full bg-black text-white">
+              <Image
+                src={logo}
+                alt="Logo"
+                width={40}
+                height={40}
+                className="rounded-full object-cover"
+              />
+            </div>
+            <span>
+              <h2>
+                Masum<span className="text-yellow-500">.</span>
+              </h2>
+            </span>
           </div>
-          <span>
-            <h2>
-              Masum<span className="text-yellow-500">.</span>
-            </h2>
-          </span>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">

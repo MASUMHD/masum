@@ -1,6 +1,5 @@
 import { FaProjectDiagram, FaUsers, FaCoffee } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
-import { BsStars } from "react-icons/bs";
 import SectionName from "@/components/sectionName/SectionName";
 
 export default function About() {

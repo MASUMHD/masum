@@ -5,6 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 import image from "@/public/profile.jpg";
 import Year from "@/components/Year";
 import { FiMapPin } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -32,13 +33,13 @@ export default function Hero() {
           </p>
 
           <div className="flex items-center justify-center md:justify-start gap-4 mt-8">
-            <button className="flex items-center gap-2 bg-black hover:bg-yellow-600/90 text-white px-6 py-3 rounded-full text-sm hover:opacity-90 transition duration-400 cursor-pointer">
+            <Link href="#projects" className="flex items-center gap-2 bg-black hover:bg-yellow-600/90 text-white px-6 py-3 rounded-full text-sm hover:opacity-90 transition duration-400 cursor-pointer">
               View Projects <FiArrowRight />
-            </button>
+            </Link>
 
-            <button className="px-6 py-3 rounded-full border text-sm  hover:bg-yellow-600/90 hover:text-white transition duration-400 cursor-pointer">
+            <Link href="#contact" className="px-6 py-3 rounded-full border text-sm  hover:bg-yellow-600/90 hover:text-white transition duration-400 cursor-pointer">
               Contact Me
-            </button>
+            </Link>
           </div>
 
           <div className="flex items-center justify-center md:justify-start gap-3 mt-8 text-sm text-gray-500 flex-wrap">
