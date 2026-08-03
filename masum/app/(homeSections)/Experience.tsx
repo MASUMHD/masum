@@ -101,14 +101,14 @@ export default function Experience() {
         </h2>
 
         {/* Toggle */}
-        <div className="flex items-center bg-white w-fit p-1 rounded-full mb-8 gap-2">
+        <div className="flex items-center bg-white w-fit p-2 rounded-lg mb-8 gap-2">
           {/* Reset / show all */}
           <button
             onClick={() => setActive("all")}
             className={`px-5 py-1 rounded-full text-base cursor-pointer ${
               active === "all"
                 ? "bg-black text-white"
-                : "text-gray-900 text-semibold  hover:bg-black hover:text-white transition duration-300 cursor-pointer"
+                : "text-gray-900 border border-gray-200  hover:bg-black hover:text-white transition duration-300 cursor-pointer"
             }`}
           >
             All
@@ -119,7 +119,7 @@ export default function Experience() {
             className={`px-5 py-1 rounded-full text-sm cursor-pointer ${
               active === "current"
                 ? "bg-black text-white"
-                : "text-gray-900 text-semibold  hover:bg-black hover:text-white transition duration-300 cursor-pointer"
+                : "text-gray-900 border border-gray-200  hover:bg-black hover:text-white transition duration-300 cursor-pointer"
             }`}
           >
             Current
@@ -130,7 +130,7 @@ export default function Experience() {
             className={`px-5 py-1 rounded-full text-sm cursor-pointer ${
               active === "previous"
                 ? "bg-black text-white"
-                : "text-gray-900 text-semibold  hover:bg-black hover:text-white transition duration-300 cursor-pointer"
+                : "text-gray-900 border border-gray-200  hover:bg-black hover:text-white transition duration-300 cursor-pointer"
             }`}
           >
             Previous
@@ -164,7 +164,7 @@ export default function Experience() {
                   </div>
 
                   <p className="text-sm text-gray-500 mb-3.5 flex items-center gap-2">
-                    <IoLocationOutline size={18} className="text-orange-500" />
+                    <IoLocationOutline size={18} className="text-orange-400" />
 
                     {exp.company.map((comp, i) => (
                       <span key={i} className="flex items-center gap-1">
@@ -180,7 +180,7 @@ export default function Experience() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <FiBriefcase size={40} className="text-orange-500 -mt-2" />
+                  <FiBriefcase size={40} className="text-orange-400 -mt-2" />
                   <p className="text-sm text-gray-500 leading-relaxed">
                     {exp.description}
                   </p>

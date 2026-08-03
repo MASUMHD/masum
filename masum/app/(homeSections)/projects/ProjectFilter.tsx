@@ -2,16 +2,16 @@ const filters = ["All", "Frontend", "Fullstack", "Next.js", "CMS"];
 
 export default function ProjectFilter({ active, setActive }: any) {
   return (
-    <div className="flex gap-3 flex-wrap">
+    <div className="flex flex-wrap items-center bg-white w-fit p-2 rounded-lg mb-3 gap-2 ">
       {filters.map((f) => (
         <button
           key={f}
           onClick={() => setActive(f)}
-          className={`px-4 py-1 rounded-full text-sm border transition
+          className={`px-5 py-1 rounded-full cursor-pointer text-sm
           ${
             active === f
               ? "bg-black text-white"
-              : "bg-white text-gray-600"
+              : "text-gray-900 border border-gray-200  hover:bg-black hover:text-white transition duration-300 cursor-pointer"
           }`}
         >
           {f}
