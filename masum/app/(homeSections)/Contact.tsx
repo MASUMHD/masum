@@ -6,7 +6,7 @@ import { FiMail, FiGithub, FiLinkedin, FiSend } from "react-icons/fi";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-24">
       <div className="">
         <SectionName width={40} name="CONTACT" />
 

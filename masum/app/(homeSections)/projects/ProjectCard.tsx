@@ -7,7 +7,7 @@ export default function ProjectCard({ item }: any) {
   return (
     <div className="bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-orange-400 hover:-translate-y-1 transition duration-300 ease-in-out">
       {/* PROJECT IMAGE */}
-      <div className="h-40 ">
+      <div className="h-56 relative overflow-hidden rounded-t-lg">
         <Image
           height={160}
           width={400}
@@ -15,11 +15,16 @@ export default function ProjectCard({ item }: any) {
           alt="Project Image"
           className="w-full h-full object-cover rounded-t-lg"
         />
+
+        {/* CATEGORY BADGE */}
+        <span className="absolute top-3 left-3 text-xs px-3 py-1 rounded-full bg-orange-400 text-white font-semibold backdrop-blur">
+          {item.category}
+        </span>
       </div>
 
       {/* CONTENT */}
       <div className="p-5">
-        <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+        <h3 className="font-semibold text-gray-900 text-lg mb-2">{item.title}</h3>
 
         {/* TECH STACK */}
         <div className="flex flex-wrap gap-2 mb-6">
