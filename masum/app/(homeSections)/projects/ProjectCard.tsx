@@ -2,10 +2,11 @@ import Image from "next/image";
 import { FiArrowRight, FiExternalLink, FiGithub } from "react-icons/fi";
 import workImage from "@/public/work_image.jpeg";
 import Link from "next/link";
+import GithubButton from "./GithubButton";
 
-export default function ProjectCard({ item }: any) {
+export default function ProjectCard({ item, onCodeClick }: any) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-orange-400 hover:-translate-y-1 transition duration-300 ease-in-out">
+    <div className="bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:border-orange-400 hover:-translate-y-1 transition duration-300 ease-in-out relative group">
       {/* PROJECT IMAGE */}
       <div className="h-56 relative overflow-hidden rounded-t-lg">
         <Image
@@ -24,7 +25,9 @@ export default function ProjectCard({ item }: any) {
 
       {/* CONTENT */}
       <div className="p-5">
-        <h3 className="font-semibold text-gray-900 text-lg mb-2">{item.title}</h3>
+        <h3 className="font-semibold text-gray-900 text-lg mb-2">
+          {item.title}
+        </h3>
 
         {/* TECH STACK */}
         <div className="flex flex-wrap gap-2 mb-6">
@@ -39,7 +42,7 @@ export default function ProjectCard({ item }: any) {
         </div>
 
         {/* LINKS */}
-        <div className="flex gap-4 justify-between text-sm text-gray-600 pt-3 border-t border-dotted border-orange-400">
+        <div className="flex gap-4 justify-between text-sm text-gray-600 pt-3 border-t border-dashed border-orange-400">
           <div className="flex gap-4">
             <Link
               href="#"
@@ -47,17 +50,15 @@ export default function ProjectCard({ item }: any) {
             >
               Live <FiExternalLink size={14} />
             </Link>
-            <Link
-              href="#"
-              className="flex items-center gap-1 hover:text-orange-400 hover:font-semibold"
-            >
-              Code <FiGithub size={14} />
-            </Link>
+
+            {/* code link */}
+            <GithubButton />
           </div>
 
           <div>
             <Link
               href="#"
+              onClick={onCodeClick}
               className="flex items-center gap-1 hover:text-orange-400 hover:font-semibold"
             >
               View More <FiArrowRight size={14} />
