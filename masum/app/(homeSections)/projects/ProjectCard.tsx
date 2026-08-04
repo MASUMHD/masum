@@ -31,7 +31,7 @@ export default function ProjectCard({ item }: any) {
           {item.tech.map((t: string, i: number) => (
             <span
               key={i}
-              className="text-xs px-4 py-1 rounded-full bg-gray-100 border border-orange-500 font-semibold text-gray-800"
+              className="text-xs px-3 py-1 rounded-full text-black bg-gray-100 border border-gray-100 hover:bg-orange-400 hover:text-white hover:-translate-y-1 transition duration-300 ease-in-out"
             >
               {t}
             </span>

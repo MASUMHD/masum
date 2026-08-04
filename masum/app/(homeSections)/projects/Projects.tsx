@@ -86,16 +86,19 @@ export default function Projects() {
             <ProjectCard key={item.id} item={item} />
           ))}
         </div>
-        
+
         {/* View All Projects Button */}
-        <div className="mt-10 text-center">
-          <button
-            onClick={() => setShowAll(!showAll)}
-            className="inline-block bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-6 rounded-full cursor-pointer animation-bounce hover:-translate-y-1 transition duration-300 ease-in-out"
-          >
-            {showAll ? "Show Less" : "View All Projects"}
-          </button>
-        </div>
+        {filtered.length > 6 && (
+          <div className="mt-10 text-center">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-block bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-6 rounded-full cursor-pointer hover:-translate-y-1 transition duration-300 ease-in-out"
+            >
+              {showAll ? "Show Less" : "View All Projects"}
+            </button>
+          </div>
+        )}
+        
       </div>
     </section>
   );
