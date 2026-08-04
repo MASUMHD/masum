@@ -5,9 +5,8 @@ import SectionName from "@/components/sectionName/SectionName";
 export default function About() {
   return (
     <section id="about" className="w-full py-16 md:py-24 z-10 relative">
-      {/* LEFT CONTENT */}
+      {/* TOP CONTENT */}
       <div>
-
         <SectionName name="About" />
 
         <h1 className="text-3xl md:text-5xl font-semibold leading-tight mb-6">
@@ -17,6 +16,7 @@ export default function About() {
         </h1>
       </div>
 
+      {/* MAIN CONTENT */}
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* RIGHT CONTENT */}
         <div className="">

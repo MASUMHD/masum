@@ -57,6 +57,7 @@ const projectsData = [
 export default function Projects() {
   const [active, setActive] = useState("All");
   const [CMS, setCms] = useState("All");
+  const [showAll, setShowAll] = useState(false);
 
   const filtered = projectsData.filter((item) => {
     if (active === "All") return true;
@@ -78,14 +79,22 @@ export default function Projects() {
 
         <ProjectFilter active={active} setActive={setActive} />
 
-        {active === "CMS" && (
-          <CMSFilter CMS={CMS} setCms={setCms} />
-        )}
+        {active === "CMS" && <CMSFilter CMS={CMS} setCms={setCms} />}
 
         <div className="grid md:grid-cols-3 gap-6 mt-10">
-          {filtered.map((item) => (
+          {(showAll ? filtered : filtered.slice(0, 6)).map((item) => (
             <ProjectCard key={item.id} item={item} />
           ))}
+        </div>
+        
+        {/* View All Projects Button */}
+        <div className="mt-10 text-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="inline-block bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-6 rounded-full cursor-pointer animation-bounce hover:-translate-y-1 transition duration-300 ease-in-out"
+          >
+            {showAll ? "Show Less" : "View All Projects"}
+          </button>
         </div>
       </div>
     </section>
