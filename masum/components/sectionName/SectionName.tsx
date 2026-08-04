@@ -11,7 +11,7 @@ export default function SectionName({
     <div
       className={`inline-flex mx-auto text-xs tracking-widest px-3 py-1 rounded-full border border-gray-300 dark:border-gray-300 items-center justify-center gap-2 ${width ? width : "w-28"} uppercase text-center mb-6`}
     >
-      <span className="text-[#e3a73b]">
+      <span className="text-orange-400">
         <BsStars size={14} />
       </span>
       <span>{name}</span>

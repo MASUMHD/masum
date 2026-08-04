@@ -41,7 +41,7 @@ export default function Education() {
             <div key={index} className="relative pl-10 ">
               {/* Icon */}
               <div className="absolute -left-3.5 -top-1 w-7 h-7 rounded-full  flex items-center justify-center border bg-amber-50  border-gray-300 dark:border-gray-300">
-                <FaGraduationCap size={18} className="text-[#e3a73b]" />
+                <FaGraduationCap size={18} className="text-orange-400" />
               </div>
 
               {/* Card */}
